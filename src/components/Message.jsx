@@ -1,7 +1,7 @@
 import Logo from "../assets/logo.png";
 import User from "../assets/User.png";
 import { TypeAnimation } from "react-type-animation";
-import Loading from "../assets/Loading_green.gif";
+import Loading from "../assets/loading_green.gif";
 import Copy from "../assets/Copy.png";
 
 const Message = ({ obj }) => {
