@@ -5,6 +5,7 @@ import axios from "axios";
 import { API_BASE_URL } from "../../config.js";
 import LogoBlack from "../assets/logo.png";
 import { Plus } from "lucide-react";
+import { useMsal } from "@azure/msal-react";
 import {
   Select,
   SelectContent,
@@ -17,6 +18,9 @@ import {
 
 const Chat = () => {
   const messagesContainer = useRef(null);
+  const { accounts } = useMsal();
+  const firstName = accounts[0].name.split(" ")[0];
+  const lastName = accounts[0].name.split(" ")[1];
   const [text, setText] = useState("");
   const [messages, setMessages] = useState([]);
   const [projectIds, setProjectIds] = useState([]);
@@ -145,7 +149,8 @@ const Chat = () => {
                 <img src={LogoBlack} alt="Logo" className="w-full h-full" />
               </div>
               <h1 className="text-2xl font-semibold">
-                How can I help you today.
+                Hi <span className="text-[#11743a]">{firstName}</span>, How can
+                I help you today?
               </h1>
             </div>
             <div

@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Sohne-Buch";
-  src: url("./fonts/TestSöhne-Buch.otf") format("opentype");
+  src: url("./fonts/Sohne-Buch.otf") format("opentype");
 }
 
 /* @font-face {
@@ -92,6 +92,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Sohne-Buch";
+  /*-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  /* font-family: "Inter"; */
 }
 
 ::-webkit-scrollbar {

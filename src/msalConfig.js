@@ -4,6 +4,7 @@ export const msalConfig = {
     authority:
       "https://login.microsoftonline.com/2ced8eca-fb8b-4dd6-a8af-ee0467e04fbc",
     redirectUri: "https://testing.d35rxtlumzro3.amplifyapp.com/",
+    // redirectUri: "http://localhost:5174/",
   },
   cache: {
     cacheLocation: "sessionStorage", // safer

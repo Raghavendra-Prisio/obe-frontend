@@ -29,7 +29,7 @@ const Login = () => {
           </h1>
         </div>
         <button
-          className="bg-[#11743a]/90 px-15 py-5 text-lg rounded-2xl text-white cursor-pointer hover:bg-[#11743a]/80"
+          className="bg-[#11743a]/90 px-15 border-gray-600 border-2 py-5 text-lg rounded-2xl text-white cursor-pointer hover:bg-[#11743a]/80"
           onClick={handleLogin}
         >
           SSO into your account

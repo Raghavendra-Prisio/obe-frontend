@@ -10,7 +10,7 @@ const Message = ({ obj }) => {
   };
   return (
     <div className={`w-full h-auto flex flex-col p-2 rounded-lg text-black`}>
-      <div className="w-full h-[40px] flex items-center">
+      <div className="w-full h-10 flex items-center">
         {obj.role == "user" ? (
           <div className="flex items-center gap-2">
             <div className="w-[25px] h-[25px]">
@@ -30,7 +30,7 @@ const Message = ({ obj }) => {
                 data-tooltip-target="tooltip-dark"
                 onClick={handleCopyToClipBoard}
               >
-                <img src={Copy} alt="Copy" className="w-[20px] h-[20px]" />
+                <img src={Copy} alt="Copy" className="w-5 h-5" />
               </div>
             )}
           </div>
