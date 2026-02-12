@@ -92,7 +92,11 @@ const Chat = () => {
       setMessages((prev) => {
         const updatedMessages = [
           ...prev.slice(0, prev.length - 1),
-          { role: "assistant", content: response.data.answer },
+          {
+            role: "assistant",
+            content: response.data.answer,
+            sourceUris: response.data.sourceUris,
+          },
         ];
         return updatedMessages;
       });

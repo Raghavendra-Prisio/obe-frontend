@@ -54,6 +54,24 @@ const Message = ({ obj }) => {
                   key={index}
                 />
               ))}
+              <span className="font-black">Source URIs:</span>
+              {obj.sourceUris &&
+                obj.sourceUris.map((value, index) => (
+                  <a
+                    key={value || index}
+                    href={value}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ display: "block" }}
+                    className="text-blue-700"
+                  >
+                    <TypeAnimation
+                      sequence={[value, () => console.log("done")]}
+                      speed={90}
+                      cursor={false}
+                    />
+                  </a>
+                ))}
             </div>
           )}
         </div>
